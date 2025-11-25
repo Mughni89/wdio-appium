@@ -1,11 +1,13 @@
-@registration
-Feature: User Registration
+@freeVoucher
+Feature: Free Voucher
   
-  Scenario: 
-      When user clicks create account
-    # And user completes registration form
-    # And user agrees term and condition
-    # And user agrees privacy policy
-    # And user enters OTP
-    # And user creates PIN
-    # Then user successfully created account
+  Scenario: Open the app successfully
+    Given user already registered
+    When the app should open successfully
+    When the user click mulai
+    And user allow SkorKu to send notif
+    And user enters credentials
+    And user chose SkorKu Pro
+    And user applies promo code
+    And user does subscription
+    Then user success purchase package
