@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "target": "es2022",
+        "lib": [
+            "es2022",
+            "dom"
+        ],
+        "types": [
+            "node",
+            "@wdio/globals/types",
+            "expect-webdriverio",
+            "@wdio/cucumber-framework",
+            "@wdio/appium-service"
+        ],
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "noEmit": true,
+        "allowImportingTsExtensions": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true
+    },
+    "include": [
+        "test",
+        "wdio.conf.ts",
+        "features/**/*.ts",
+        "src/step-definitions/**/*.ts",
+        "src/config/**/*.ts",
+        "src/helpers/**/*.ts",
+        "src/pages/**/*.ts",
+        "features/**/*.ts",
+        "./**/*.ts",
+        "wdio.conf.ts",
+        "src/types/**/*.d.ts"
+]
+}

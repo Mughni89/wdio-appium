@@ -1,0 +1,1 @@
+invalid session id: WebDriverError: A session is either terminated or not started when running "appium/device/current_activity" with method "GET"
