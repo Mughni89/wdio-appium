@@ -35,18 +35,10 @@ class RegistrationPage {
         return $('id=com.kbij.skorku:id/btnContinue').click();
     }
     async enterOtp(otp: string) {
-    // const otp = await getLatestOtp("user@mail.com");
-    // console.log("OTP:", otp);
-    // await $('id=com.kbij.skorku:id/pin1').waitForDisplayed({timeout : 5000});
-    // await $('id=com.kbij.skorku:id/pin1').click();
-    // await $('id=com.kbij.skorku:id/pin1').setValue(otp);
-    // const el = await $('id=com.app:id/otp_input');
-    // await el.click();
-    //  el.addValue(otp);
-    await $('id=com.kbij.skorku:id/pin1').click();
-    for (const digit of otp){
-        await driver.pressKeyCode(Number(digit));
-    }
+        await $('id=com.kbij.skorku:id/pin1').click();
+            for (const digit of otp){
+                await driver.pressKeyCode(Number(digit));
+            }
     }
     async createPIN() {
         return $('id=com.kbij.skorku:id/btnContinue').click();
@@ -69,8 +61,6 @@ class RegistrationPage {
         return $('id=com.kbij.skorku:id/btnContinue').click();
     }
     async skipToHomepage() {
-        // return $('id=com.kbij.skorku:id/btnDetailComprehensive').click();
-        // return $('id=com.kbij.skorku:id/btnDetailStandard').click();
         return $('id=com.kbij.skorku:id/skipText').click();
     }
     async hoever() {

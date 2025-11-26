@@ -1,5 +1,4 @@
 import { When, Then } from '@wdio/cucumber-framework';
-//import { driver } from '@wdio/globals';
 import RegistrationPage from '../pages/registrationPage';
 import { getLatestOtp } from '../helpers/getOtp';
 import dataUserJson from '../../fixtures/DataRegUser.json';
@@ -37,14 +36,10 @@ When('user agrees privacy policy', async () => {
 
 When('user enters OTP', async () => {
     const otp = await getLatestOtp();
-    // if (!otp) {
-    //     throw new Error("OTP not found in database!");
-    // }
-    // await RegistrationPage.enterOtp(otp);
-     for (let i = 0; i < otp.length; i++) {
-        const field = await $(`id=com.kbij.skorku:id/pin${i + 1}`);
-        await field.waitForDisplayed({ timeout: 5000 });
-        await field.setValue(otp[i]);
+        for (let i = 0; i < otp.length; i++) {
+            const field = await $(`id=com.kbij.skorku:id/pin${i + 1}`);
+            await field.waitForDisplayed({ timeout: 5000 });
+            await field.setValue(otp[i]);
     }
 });
 

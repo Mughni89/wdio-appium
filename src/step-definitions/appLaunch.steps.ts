@@ -1,5 +1,4 @@
 import { Given, When} from '@wdio/cucumber-framework';
-//import { driver } from '@wdio/globals';
 import { createVarRegister } from '../helpers/varRegister';
 import type {UserData} from '../types/registerType';
 import { swipeLeft } from '../helpers/gestures';
@@ -10,9 +9,7 @@ let dataUser: UserData;
 
 Given('the app is launched', async () => {
     await createVarRegister();
-    // await fixture('DataRegUser').then((json) => {
         dataUser = dataUserJson;
-    // })
 });
 
 When('the app should open successfully', async () => {

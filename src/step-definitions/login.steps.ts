@@ -1,8 +1,4 @@
 import { When} from '@wdio/cucumber-framework';
-//import { driver } from '@wdio/globals';
-// import { createVarRegister } from '../helpers/varRegister';
-// import type {UserData} from '../types/registerType';
-// import { swipeLeft } from '../helpers/gestures';
 import LoginPage from '../pages/loginPage';
 import dataUserJson from '../../fixtures/DataRegUser.json';
 

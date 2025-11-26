@@ -23,12 +23,6 @@ function getUserMail() {
 function getRandomName() {
   return 'skorkuser' + getUniqueStringFromTime() ;
 }
-
-// const emailUser = `${getUserMail()}@${domainEmail}`;
-
-// let userData: UserData = {
-//     emailUser
-// };
   
 export async function createVarRegister() {
     const userData: UserData = {
