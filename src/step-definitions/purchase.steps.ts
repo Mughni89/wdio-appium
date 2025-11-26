@@ -1,12 +1,5 @@
 import { When, Then} from '@wdio/cucumber-framework';
-//import { driver } from '@wdio/globals';
-// import { createVarRegister } from '../helpers/varRegister';
-// import type {UserData} from '../types/registerType';
-// import { swipeLeft } from '../helpers/gestures';
 import PurchasePage from '../pages/purchasePage';
-// import dataUserJson from '../../fixtures/DataRegUser.json';
-
-// let dataUser = dataUserJson;
 
 When('user chose SkorKu Pro', async () => {
     await PurchasePage.clickKOLmuAman();
