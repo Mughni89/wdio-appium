@@ -4,11 +4,11 @@ import dataUser from '../../fixtures/DataRegUser.json';
 export async function getLatestOtp() {
     const email = dataUser.emailUser;
     const client = new Client({
-        host: 'host',
-        port: 'port',
-        user: 'user',
-        password: 'password',
-        database: 'db_name'
+        host: '103.196.154.5',
+        port: '5432',
+        user: 'suitmedia',
+        password: 'zKAA^M2LwLd7^peDv@oK9d9p5X!xfi&@$8TnRfuf',
+        database: 'suitmedia_cbi'
 });
     await client.connect();
 

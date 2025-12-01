@@ -1,5 +1,5 @@
-@freeVoucher
-Feature: Free Voucher
+@ekyc
+Feature: ekyc
   
   Scenario: Open the app successfully
     # Given user already registered
@@ -7,7 +7,6 @@ Feature: Free Voucher
     When the user click mulai
     And user allow SkorKu to send notif
     And user enters credentials
-    And user chose SkorKu Pro
-    And user applies promo code
-    And user does subscription
-    Then user success purchase package
+    And user uploads eKTP
+    And user does liveness detection
+    Then user successfully complete ekyc

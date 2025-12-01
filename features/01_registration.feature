@@ -13,3 +13,10 @@ Feature: App Launch Test
     And user enters OTP
     And user creates PIN
     Then user successfully created account
+    # And user chose SkorKu Pro
+    # And user applies promo code
+    # And user does subscription
+    # Then user success purchase package
+    # And user uploads eKTP
+    # And user does liveness detection
+    # Then user successfully complete ekyc
